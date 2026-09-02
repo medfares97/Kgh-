@@ -1,0 +1,7 @@
+{
+  "name": "KGH Gebäudereinigung Hannover",
+  "description": "A futuristic Web3-inspired dynamic website for KGH Gebäudereinigung, a professional cleaning company based in Hannover, Germany.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
