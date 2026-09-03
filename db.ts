@@ -58,6 +58,13 @@ const DB_KEYS = {
 
 const BUSINESS_INBOX_EMAIL = 'info@kgh-reinigung.de';
 
+const fallbackMailto = (to: string, subject: string, content: string) => {
+  if (typeof window === 'undefined') return;
+
+  const mailtoUrl = `mailto:${to}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(content)}`;
+  window.location.href = mailtoUrl;
+};
+
 // Internal Mailer Utility - Modified to be non-blocking
 const sendEmail = (to: string, subject: string, content: string) => {
   fetch('mail-bridge.php', {
@@ -65,9 +72,18 @@ const sendEmail = (to: string, subject: string, content: string) => {
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ to, subject, content })
   })
-  .then(res => res.json())
-  .then(result => console.debug('Email notification status:', result))
-  .catch(e => console.warn("Email notification bridge failed (background):", e));
+  .then(async res => {
+    const result = await res.json().catch(() => ({ status: 'unknown' }));
+    console.debug('Email notification status:', result);
+
+    if (!res.ok) {
+      throw new Error(result?.message || 'Mail bridge request failed');
+    }
+  })
+  .catch(e => {
+    console.warn('Email notification bridge failed (background). Falling back to mailto:', e);
+    fallbackMailto(to, subject, content);
+  });
 };
 
 // Security Obfuscation Logic
