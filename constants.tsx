@@ -181,7 +181,7 @@ export const LEGAL_CONTENT = {
     court: 'Amtsgericht Hannover',
     representative: 'Mohamed Amine Khediri',
     role: 'Geschäftsführer',
-    contact: { phone: '+49 (0) 151 25207791', email: 'info@kgh-reinigung.de’},
+    contact: { phone: '+49 (0) 151 25207791', email: "info@kgh-reinigung.de" },
     vatId: 'DE 463845280',
     dispute: 'Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.',
     liabilityContent: 'Als Diensteanbieter sind wir für die Inhalte unserer Website nach den gesetzlichen Vorschriften verantwortlich. Wir erstellen und prüfen unsere Inhalte sorgfältig. Sollten uns dennoch Fehler oder Rechtsverletzungen bekannt werden, werden wir die betreffenden Inhalte unverzüglich entfernen oder berichtigen.',
