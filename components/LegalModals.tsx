@@ -166,7 +166,10 @@ export const LegalModals: React.FC<LegalModalProps> = ({ type, onClose }) => {
               <div className="space-y-8">
                  <div className="flex items-center gap-3 p-4 bg-violet-50 rounded-2xl border border-violet-100 mb-4">
                     <FileText size={16} className="text-violet-600" />
-                    <p className="text-[10px] font-black text-violet-600 uppercase tracking-widest">Global Data Security Protocol</p>
+                    <div>
+                      <p className="text-[10px] font-black text-violet-600 uppercase tracking-widest">{LEGAL_CONTENT.privacy.title}</p>
+                      <p className="text-[9px] font-bold text-slate-500 uppercase tracking-[0.25em] mt-1">{LEGAL_CONTENT.privacy.effectiveDate}</p>
+                    </div>
                  </div>
                  {LEGAL_CONTENT.privacy.sections.map((section, idx) => (
                     <div key={idx} className="space-y-3 group">
@@ -176,7 +179,7 @@ export const LegalModals: React.FC<LegalModalProps> = ({ type, onClose }) => {
                         </span>
                         <h4 className="text-[11px] font-black text-slate-900 tracking-widest uppercase">{section.title}</h4>
                       </div>
-                      <p className="text-[10px] text-slate-500 leading-relaxed font-medium pl-9">
+                      <p className="text-[10px] text-slate-500 leading-relaxed font-medium pl-9 whitespace-pre-line">
                         {section.content}
                       </p>
                     </div>
