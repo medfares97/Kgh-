@@ -16,11 +16,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         exit;
     }
 
-    // Default admin email
-    $admin_email = "info@kgh-reinigung.de";
-    
-    // Use provided recipient or fallback to admin
-    $to = !empty($data['to']) ? $data['to'] : $admin_email;
+    // Default business inbox for all form submissions.
+    $business_email = "info@kgh-reinigung.de";
+
+    // Use provided recipient or fallback to the company inbox.
+    $to = !empty($data['to']) ? $data['to'] : $business_email;
     $subject = !empty($data['subject']) ? $data['subject'] : "System Benachrichtigung - KGH";
     $message = !empty($data['content']) ? $data['content'] : "Kein Inhalt angegeben.";
     

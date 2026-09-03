@@ -56,6 +56,8 @@ const DB_KEYS = {
   USERS: 'kgh_users'
 };
 
+const BUSINESS_INBOX_EMAIL = 'info@kgh-reinigung.de';
+
 // Internal Mailer Utility - Modified to be non-blocking
 const sendEmail = (to: string, subject: string, content: string) => {
   fetch('mail-bridge.php', {
@@ -149,8 +151,8 @@ export const db = {
     };
     saveToStore(DB_KEYS.INQUIRIES, [...inquiries, newInquiry]);
 
-    // Admin Alert - Dispatched in background
-    sendEmail("info@kgh-reinigung.de", "Admin Alert: Neue Kundenanfrage", 
+    // Contact inquiries should go to the business inbox, not the admin dashboard.
+    sendEmail(BUSINESS_INBOX_EMAIL, "Admin Alert: Neue Kundenanfrage",
       `Eine neue Anfrage von ${newInquiry.name} (${newInquiry.email}) ist eingegangen.\nTelefon: ${newInquiry.phone}\nLeistung: ${newInquiry.service}\nNachricht: ${newInquiry.message}\nZeitpunkt: ${newInquiry.date}`);
 
     return newInquiry;
@@ -170,8 +172,8 @@ export const db = {
     };
     saveToStore(DB_KEYS.APPLICATIONS, [...apps, newApp]);
 
-    // Admin Alert - Dispatched in background
-    sendEmail("info@kgh-reinigung.de", "Admin Alert: Neue Bewerbung", 
+    // Application alerts also go to the company inbox.
+    sendEmail(BUSINESS_INBOX_EMAIL, "Admin Alert: Neue Bewerbung",
       `Eine neue Bewerbung von ${newApp.name} (${newApp.email}) ist eingegangen.\nTelefon: ${newApp.phone}\nStelle: ${newApp.jobTitle}\nTracking-ID: ${newApp.id}\nZeitpunkt: ${newApp.date}`);
 
     return newApp;
