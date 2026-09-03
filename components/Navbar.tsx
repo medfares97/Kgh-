@@ -207,24 +207,10 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPath }) => {
             <div className="mt-auto pb-12 pt-12 relative z-10">
               <div className="p-10 bg-white/5 rounded-[3rem] border border-white/10 backdrop-blur-3xl space-y-6">
                 <div className="flex flex-col">
-                  <p className="text-[10px] font-black uppercase tracking-[0.4em] text-violet-500 mb-2">Service Grid</p>
-                  <a href="tel:+4951199887766" className="text-3xl font-black text-white hover:text-violet-500 transition-colors tracking-tight">+49 511 99887766</a>
+                  <p className="text-[10px] font-black uppercase tracking-[0.4em] text-violet-500 mb-2">KGH Service</p>
+                  <a href="tel:+4915125207791" className="text-3xl font-black text-white hover:text-violet-500 transition-colors tracking-tight">+49 151 25207791</a>
                 </div>
-                <div className="flex items-center justify-between pt-6 border-t border-white/5">
-                  <div className="flex items-center gap-4">
-                    <div className="w-12 h-12 bg-white/10 rounded-2xl flex items-center justify-center text-white/40">
-                      <Cpu size={24} />
-                    </div>
-                    <div className="flex flex-col">
-                      <span className="text-[9px] font-black text-white/30 uppercase tracking-widest">Protocol</span>
-                      <span className="text-[11px] font-bold text-white uppercase">v2.5 Stable</span>
-                    </div>
-                  </div>
-                  <div className="flex items-center gap-3 px-5 py-2.5 bg-emerald-500/10 rounded-full border border-emerald-500/20">
-                    <div className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-                    <span className="text-[10px] font-black text-emerald-500 uppercase tracking-widest">Active</span>
-                  </div>
-                </div>
+                
               </div>
             </div>
           </motion.div>
