@@ -49,7 +49,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenLegal, onOpenAdmin }) => {
               </div>
               <div className="flex flex-col">
                 <span className="font-heading font-black text-slate-900 text-2xl sm:text-3xl tracking-tighter leading-none gradient-text uppercase">KGH</span>
-                <span className="text-[12px] text-violet-700 font-bold tracking-tight mt-2 sm:mt-3">Gebäudereinigung UG</span>
+                <span className="text-[12px] text-violet-700 font-bold tracking-tight mt-2 sm:mt-3">Gebäudereinigung Hannover UG (haftungsbeschränkt)</span>
               </div>
             </div>
             
