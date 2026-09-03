@@ -8441,7 +8441,7 @@ Error generating stack: `+d.message+`
 
 Downloads und Kopien dieser Website sind ausschließlich für den privaten und nicht kommerziellen Gebrauch gestattet.`},privacy:{title:"Datenschutzerklärung",effectiveDate:"Stand: August 2026",sections:[{title:"1. Verantwortlicher",content:`Verantwortlich für die Verarbeitung personenbezogener Daten auf dieser Website ist:
 
-KGH Gebäudereinigung UG (haftungsbeschränkt)
+KGH Gebäudereinigung Hannover UG (haftungsbeschränkt)
 Herrenhäuser Markt 3
 30419 Hannover
 Deutschland
