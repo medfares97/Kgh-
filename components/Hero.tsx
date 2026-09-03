@@ -130,7 +130,7 @@ export const Hero: React.FC = () => {
                 className="relative z-10 p-4 bg-white/20 backdrop-blur-3xl border border-white/40 rounded-[3rem] shadow-[0_40px_100px_-20px_rgba(37,99,235,0.2)] overflow-hidden"
               >
                 <img 
-                  src="https://i.pinimg.com/1200x/19/59/3b/19593b730eb32c4e51e9fce8660f5c78.jpg" 
+                  src="hero.jpeg"
                   alt="Architecture Design" 
                   className="w-full h-[400px] lg:h-[550px] object-cover rounded-[2.2rem] shadow-2xl brightness-110 contrast-105"
                 />
