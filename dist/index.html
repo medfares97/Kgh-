@@ -1,0 +1,192 @@
+
+<!DOCTYPE html>
+<html lang="de" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Primary SEO -->
+    <title>KGH Gebäudereinigung Hannover</title>
+    <meta name="title" content="KGH Gebäudereinigung Hannover | Profi für Büro & Glasreinigung" />
+    <meta name="description" content="KGH Gebäudereinigung in Hannover: Ihr Partner für Unterhaltsreinigung, Büroreinigung, Glasreinigung und Gartenpflege. Erleben Sie Premium-Sauberkeit mit Web3-Präzision." />
+    <meta name="keywords" content="Gebäudereinigung Hannover, Büroreinigung Hannover, Glasreinigung, Treppenhausreinigung, KGH Reinigung, Reinigungsfirma Hannover" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="German" />
+    <meta name="author" content="KGH Gebäudereinigung" />
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://kgh-reinigung.de/" />
+    <meta property="og:title" content="KGH Gebäudereinigung Hannover | Glanz auf höchstem Niveau" />
+    <meta property="og:description" content="Professionelle Reinigungsdienste für Firmen und Privatpersonen in Hannover und Region. Jetzt Termin vereinbaren." />
+    <meta property="og:image" content="logo.png" />
+
+    <!-- JSON-LD Structured Data for Google -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "KGH Gebäudereinigung Hannover",
+        "image": "logo.png",
+        "@id": "https://kgh-reinigung.de",
+        "url": "https://kgh-reinigung.de",
+        "telephone": "+495111234567",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Musterstraße 123",
+          "addressLocality": "Hannover",
+          "postalCode": "30159",
+          "addressCountry": "DE"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 52.3759,
+          "longitude": 9.7320
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "08:00",
+          "closes": "18:00"
+        }
+      }
+    </script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              primary: '#2563eb',
+              secondary: '#0ea5e9',
+              slate: {
+                950: '#020617'
+              }
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              heading: ['Plus Jakarta Sans', 'sans-serif'],
+            },
+          }
+        }
+      }
+      
+      if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark')
+      } else {
+        document.documentElement.classList.remove('dark')
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --primary: #2563eb;
+        --secondary: #0ea5e9;
+        --bg-main: #fcfdfe;
+        --text-main: #0f172a;
+      }
+      
+      .dark {
+        --bg-main: #020617;
+        --text-main: #f8fafc;
+      }
+
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: var(--bg-main);
+        color: var(--text-main);
+        overflow-x: hidden;
+      }
+
+      .glass {
+        background: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border: 1px solid rgba(255, 255, 255, 0.4);
+      }
+
+      .dark .glass {
+        background: rgba(15, 23, 42, 0.7);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+      }
+
+      .gradient-text {
+        background: linear-gradient(135deg, #2563eb 0%, #0ea5e9 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 800;
+      }
+
+      .btn-primary {
+        background: linear-gradient(135deg, #2563eb 0%, #0ea5e9 100%);
+        transition: all 0.3s ease;
+      }
+
+      .btn-primary:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 25px -5px rgba(37, 99, 235, 0.4);
+      }
+
+      .bg-pattern {
+        background-image: radial-gradient(#e2e8f0 0.5px, transparent 0.5px);
+        background-size: 24px 24px;
+        opacity: 0.4;
+      }
+
+      .dark .bg-pattern {
+        background-image: radial-gradient(#334155 0.5px, transparent 0.5px);
+      }
+
+      ::-webkit-scrollbar { width: 8px; }
+      ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 10px; }
+      .dark ::-webkit-scrollbar-thumb { background: #334155; }
+
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+
+      .card-shadow {
+        box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+      }
+
+      @keyframes float {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-10px); }
+        100% { transform: translateY(0px); }
+      }
+      .animate-float { animation: float 6s ease-in-out infinite; }
+    </style>
+
+<link rel="stylesheet" href="/index.css">
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "framer-motion": "https://esm.sh/framer-motion@^12.4.7",
+    "@/": "./"
+  }
+}
+</script>
+  <script type="module" crossorigin src="/assets/index-nqZywRJx.js"></script>
+</head>
+  <body>
+    <div id="root"></div>
+</body>
+</html>

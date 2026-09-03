@@ -82,13 +82,12 @@ export const LegalModals: React.FC<LegalModalProps> = ({ type, onClose }) => {
                 <div className="space-y-2">
                   <p className="text-[9px] font-black text-violet-600 uppercase tracking-[0.4em]">Angaben gemäß § 5 TMG</p>
                   <h4 className="text-base font-black text-slate-900 tracking-tight">{LEGAL_CONTENT.impressum.company}</h4>
-                  <p className="text-[11px] text-slate-500 font-bold uppercase tracking-wider">{LEGAL_CONTENT.impressum.owner}</p>
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div className="p-5 bg-slate-50 rounded-2xl border border-slate-100">
                      <p className="text-[8px] font-black text-slate-400 uppercase tracking-widest mb-1">Anschrift</p>
-                     <p className="text-[10px] font-bold text-slate-700 leading-relaxed">{LEGAL_CONTENT.impressum.address}</p>
+                     <p className="text-[10px] font-bold text-slate-700 leading-relaxed whitespace-pre-line">{LEGAL_CONTENT.impressum.address}</p>
                   </div>
                   <div className="p-5 bg-slate-50 rounded-2xl border border-slate-100 space-y-3">
                      <p className="text-[8px] font-black text-slate-400 uppercase tracking-widest mb-1">Kontakt</p>
@@ -103,19 +102,64 @@ export const LegalModals: React.FC<LegalModalProps> = ({ type, onClose }) => {
                   </div>
                 </div>
 
-                <div className="p-6 bg-violet-50 rounded-2xl border border-violet-100">
-                  <p className="text-[9px] font-black text-violet-600 uppercase tracking-[0.4em] mb-2 flex items-center gap-2">
-                    <Award size={12} /> Haftungsausschluss
-                  </p>
-                  <p className="text-[10px] text-slate-600 leading-relaxed italic font-medium">
-                    {LEGAL_CONTENT.impressum.disclaimer}
-                  </p>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div className="p-5 bg-slate-50 rounded-2xl border border-slate-100">
+                    <p className="text-[8px] font-black text-slate-400 uppercase tracking-widest mb-1">Handelsregister</p>
+                    <p className="text-[10px] font-bold text-slate-700">{LEGAL_CONTENT.impressum.register}</p>
+                  </div>
+                  <div className="p-5 bg-slate-50 rounded-2xl border border-slate-100">
+                    <p className="text-[8px] font-black text-slate-400 uppercase tracking-widest mb-1">Registergericht</p>
+                    <p className="text-[10px] font-bold text-slate-700">{LEGAL_CONTENT.impressum.court}</p>
+                  </div>
                 </div>
 
-                <div className="text-center pt-4">
-                  <span className="px-4 py-2 bg-slate-100 rounded-lg text-[9px] font-black text-slate-400 uppercase tracking-[0.2em]">
-                    {LEGAL_CONTENT.impressum.taxId}
-                  </span>
+                <div className="p-5 bg-violet-50 rounded-2xl border border-violet-100">
+                  <p className="text-[8px] font-black text-violet-600 uppercase tracking-widest mb-2">Vertreten durch</p>
+                  <p className="text-[10px] font-bold text-slate-700">{LEGAL_CONTENT.impressum.representative}</p>
+                  <p className="text-[10px] text-slate-600 mt-1">{LEGAL_CONTENT.impressum.role}</p>
+                </div>
+
+                <div className="space-y-4">
+                  <div className="p-5 bg-slate-50 rounded-2xl border border-slate-100">
+                    <p className="text-[8px] font-black text-slate-400 uppercase tracking-widest mb-2">Umsatzsteuer-ID</p>
+                    <p className="text-[10px] font-bold text-slate-700">{LEGAL_CONTENT.impressum.vatId}</p>
+                  </div>
+
+                  <div className="p-6 bg-violet-50 rounded-2xl border border-violet-100">
+                    <p className="text-[9px] font-black text-violet-600 uppercase tracking-[0.4em] mb-2 flex items-center gap-2">
+                      <Award size={12} /> Verbraucherschlichtung
+                    </p>
+                    <p className="text-[10px] text-slate-600 leading-relaxed font-medium">
+                      {LEGAL_CONTENT.impressum.dispute}
+                    </p>
+                  </div>
+
+                  <div className="p-6 bg-violet-50 rounded-2xl border border-violet-100">
+                    <p className="text-[9px] font-black text-violet-600 uppercase tracking-[0.4em] mb-2 flex items-center gap-2">
+                      <Award size={12} /> Haftung für Inhalte
+                    </p>
+                    <p className="text-[10px] text-slate-600 leading-relaxed font-medium">
+                      {LEGAL_CONTENT.impressum.liabilityContent}
+                    </p>
+                  </div>
+
+                  <div className="p-6 bg-violet-50 rounded-2xl border border-violet-100">
+                    <p className="text-[9px] font-black text-violet-600 uppercase tracking-[0.4em] mb-2 flex items-center gap-2">
+                      <Award size={12} /> Haftung für Links
+                    </p>
+                    <p className="text-[10px] text-slate-600 leading-relaxed font-medium">
+                      {LEGAL_CONTENT.impressum.liabilityLinks}
+                    </p>
+                  </div>
+
+                  <div className="p-6 bg-violet-50 rounded-2xl border border-violet-100">
+                    <p className="text-[9px] font-black text-violet-600 uppercase tracking-[0.4em] mb-2 flex items-center gap-2">
+                      <Award size={12} /> Urheberrecht
+                    </p>
+                    <p className="text-[10px] text-slate-600 leading-relaxed font-medium whitespace-pre-line">
+                      {LEGAL_CONTENT.impressum.copyright}
+                    </p>
+                  </div>
                 </div>
               </div>
             ) : (

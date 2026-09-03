@@ -175,12 +175,18 @@ export const CONTACT_INFO = {
 
 export const LEGAL_CONTENT = {
   impressum: {
-    company: 'KGH Gebäudereinigung Hannover GmbH i.G.',
-    owner: 'Geschäftsführung: Faress K.',
-    address: 'Hannover, Niedersachsen, Deutschland',
-    contact: { phone: '+49 (0) 511 99887766', email: 'service@kgh-reinigung.de' },
-    taxId: 'Steuernummer: In Beantragung',
-    disclaimer: 'Haftung für Inhalte: Wir sind für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich (§ 7 Abs.1 TMG).'
+    company: 'KGH Gebäudereinigung UG (haftungsbeschränkt)',
+    address: 'Herrenhäuser Markt 3\n30419 Hannover',
+    register: 'HRB 231066',
+    court: 'Amtsgericht Hannover',
+    representative: 'Mohamed Amine Khediri',
+    role: 'Geschäftsführer',
+    contact: { phone: '0178 4029733', email: 'info@kgh-gebaedereinigung.de' },
+    vatId: 'DE 463845280',
+    dispute: 'Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.',
+    liabilityContent: 'Als Diensteanbieter sind wir für die Inhalte unserer Website nach den gesetzlichen Vorschriften verantwortlich. Wir erstellen und prüfen unsere Inhalte sorgfältig. Sollten uns dennoch Fehler oder Rechtsverletzungen bekannt werden, werden wir die betreffenden Inhalte unverzüglich entfernen oder berichtigen.',
+    liabilityLinks: 'Unsere Website kann Links zu externen Websites Dritter enthalten. Auf deren Inhalte haben wir keinen Einfluss und übernehmen daher keine Verantwortung. Für die Inhalte der verlinkten Seiten ist ausschließlich der jeweilige Betreiber verantwortlich. Sollten wir von rechtswidrigen Inhalten auf verlinkten Seiten Kenntnis erlangen, werden wir die entsprechenden Links unverzüglich entfernen.',
+    copyright: 'Die auf dieser Website veröffentlichten Texte, Bilder und sonstigen Inhalte unterliegen dem deutschen Urheberrecht. Jede Vervielfältigung, Bearbeitung oder Verbreitung außerhalb der gesetzlichen Bestimmungen bedarf der vorherigen schriftlichen Zustimmung der KGH Gebäudereinigung UG (haftungsbeschränkt) oder des jeweiligen Rechteinhabers.\n\nDownloads und Kopien dieser Website sind ausschließlich für den privaten und nicht kommerziellen Gebrauch gestattet.'
   },
   privacy: {
     title: 'Datenschutzerklärung (DSGVO)',
